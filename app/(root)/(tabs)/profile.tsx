@@ -1,8 +1,8 @@
 import { useUser } from "@clerk/clerk-expo";
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
 import InputField from "@/components/InputField";
+import ToggleTheme from "@/components/ToggleTheme";
 
 const Profile = () => {
   const { user } = useUser();
@@ -13,8 +13,10 @@ const Profile = () => {
         className="px-5"
         contentContainerStyle={{ paddingBottom: 120 }}
       >
-        <Text className="text-2xl font-JakartaBold my-5">My profile </Text>
-
+        <View className="flex-row my-5 justify-between">
+          <Text className="text-2xl font-JakartaBold">My profile </Text>
+          <ToggleTheme />
+        </View>
         <View className="flex items-center justify-center my-2">
           <Image
             source={{

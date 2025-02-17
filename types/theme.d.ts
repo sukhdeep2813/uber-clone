@@ -1,7 +1,6 @@
-export interface ThemeState {
-  isDark: boolean;
+export type Theme = "light" | "dark";
+
+export interface ThemeContextType {
+  theme: Theme;
   toggleTheme: () => void;
 }
-
-declare const theme: ThemeState;
-export default theme;
