@@ -1,7 +1,12 @@
 import { create } from "zustand";
-import { ThemeState } from "@/types/theme";
+import { Theme } from "@/types/theme";
 
+interface ThemeState {
+  theme: Theme;
+  toggleTheme: () => void;
+}
 export const useThemeStore = create<ThemeState>((set) => ({
-  isDark: false,
-  toggleTheme: () => set((state) => ({ isDark: !state.isDark })),
+  theme: "light",
+  toggleTheme: () =>
+    set((state) => ({ theme: state.theme === "light" ? "dark" : "light" })),
 }));
