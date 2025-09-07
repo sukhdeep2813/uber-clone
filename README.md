@@ -2,7 +2,6 @@
 ---
 
 > **⚠️ Note:** This repository has been archived due to irrecoverable dependency issues.  
-> A new and stable version is being developed in this repository: 
 
 ---
 
@@ -11,17 +10,7 @@
 This project is a full-stack, cross-platform ride-hailing application inspired by Uber, built using React Native. The app replicates Uber’s core functionalities, including robust user authentication, real-time location tracking, ride booking, and secure payments via Stripe. Additionally, it features an advanced AI chatbot that enables users to set their start and destination points via text or voice commands, offering a modern and accessible user experience.
 
 **Why archived?**  
-Maintaining this project became infeasible due to deep-rooted dependency issues in both the frontend and backend stacks. For a more reliable and up-to-date codebase, please refer to the new repository linked above.
-
----
-
-## 📸 Screenshots / Demo
-
-<!-- 
-Add screenshots or a GIF demonstrating the app here.
-Example:
-![App Demo](screens/demo.gif)
--->
+Maintaining this project became infeasible due to deep-rooted dependency conflicts in both the frontend and backend stacks. The project effectively entered a state of dependency hell, where upgrading or replacing one package would break others, creating a deadlock situation in the development lifecycle.
 
 ---
 
@@ -82,7 +71,6 @@ Example:
 
 - [Node.js](https://nodejs.org/) >= 16.x
 - [npm](https://www.npmjs.com/) >= 8.x
-- [Python](https://www.python.org/) >= 3.8
 - [Expo CLI](https://docs.expo.dev/get-started/installation/) (`npm install -g expo-cli`)
 - [PostgreSQL](https://www.postgresql.org/)
 - [Neon Account](https://neon.tech/)
