@@ -1,13 +1,8 @@
 # Uber Clone (Legacy & Archived)
-
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/sukhdeep2813/uber-clone/actions)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![Contributors](https://img.shields.io/badge/contributors-1-orange)](https://github.com/sukhdeep2813/uber-clone/graphs/contributors)
-
 ---
 
 > **⚠️ Note:** This repository has been archived due to irrecoverable dependency issues.  
-> A new and stable version is being developed in this repository: **[Link to your new repository]**
+> A new and stable version is being developed in this repository: 
 
 ---
 
@@ -48,13 +43,6 @@ Example:
 - **Secure Payment Integration**
   - Stripe integration for seamless and secure payments
 
-- **AI Chatbot**
-  - Conversational interface for booking rides, powered by NLU (Rasa or equivalent)
-  - Accepts both text and voice commands
-
-- **Voice Command Support**
-  - Fill in source and destination using speech recognition
-
 - **Ride History & User Profile Management**
   - View previous rides, manage profile and settings
 
@@ -75,9 +63,6 @@ Example:
   - [Node.js](https://nodejs.org/)
   - [Express.js](https://expressjs.com/)
   - [TypeScript](https://www.typescriptlang.org/)
-- **AI Chatbot API:**
-  - [Python](https://www.python.org/)
-  - [Rasa](https://rasa.com/) or similar NLU framework
 
 ### Database
 
@@ -127,13 +112,6 @@ cd ../server
 npm install
 ```
 
-#### AI Backend (Python, Rasa)
-
-```sh
-cd ../ai-backend
-pip install -r requirements.txt
-```
-
 ### 3. Environment Variables
 
 Create a `.env` file in each service directory (`client`, `server`, `ai-backend`) using the provided `.env.example` as a template.
@@ -150,9 +128,6 @@ STRIPE_SECRET_KEY=your_stripe_secret_key_here
 
 # Database
 DATABASE_URL=postgres://user:password@host:port/dbname
-
-# AI/NLU Service
-RASA_SERVER_URL=http://localhost:5005
 
 # Other
 JWT_SECRET=your_jwt_secret_here
@@ -190,6 +165,4 @@ If you are running on a real device, ensure your machine and device are on the s
 
 ---
 
-## 📄 License
 
-This project is distributed under the [MIT License](./LICENSE).
